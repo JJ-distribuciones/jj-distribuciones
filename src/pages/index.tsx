@@ -196,7 +196,7 @@ export default function JJDistribuciones() {
   const [terminoBusqueda, setTerminoBusqueda] = useState('');
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Todos');
   const [productoExpandido, setProductoExpandido] = useState<number | null>(null);
-  const numeroWhatsapp = "573015753258"; // ¡NÚMERO DE WHATSAPP CORREGIDO!
+  const numeroWhatsapp = "573017685501"; // ¡NÚMERO DE WHATSAPP CORREGIDO!
 
   const categorias = ['Todos', ...new Set(productos.map(p => p.categoria))];
 
