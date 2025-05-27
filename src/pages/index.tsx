@@ -19,13 +19,12 @@ const imagenesProductos = {
   papasFrancesas: '/images/papas-francesas.jpg',
   piernaPollo: '/images/pierna-pollo.jpg',
   chuletaCerdo: '/images/chuleta-cerdo.jpg',
-  fileteRes: '/images/filete-res.jpg',
+  // fileteRes: '/images/filete-res.jpg', // YA NO NECESITAMOS LA IMAGEN PARA ESTE PRODUCTO
   piernaCerdo: '/images/pierna-cerdo.jpg',
   pechugaPollo: '/images/pechuga-pollo.jpg',
   camarones: '/images/camarones.jpg',
   salmon: '/images/salmon.jpg',
   chuletonCerdo: '/images/chuleton-cerdo.jpg',
-  // --- Nuevas imágenes para los productos solicitados ---
   bocachicoImportado: '/images/bocachico-importado.jpg',
   bagreRioPostas: '/images/bagre-rio-postas.jpg',
   cachamaEntera: '/images/cachama-entera.jpg',
@@ -33,7 +32,8 @@ const imagenesProductos = {
   basaEntera: '/images/basa-entera.jpg',
   fileteBasa: '/images/filete-basa.jpg',
   truchaMariposa: '/images/trucha-mariposa.jpg',
-  pechugaEntera: '/images/pechuga-entera.jpg'
+  pechugaEntera: '/images/pechuga-entera.jpg',
+  tilapiaRoja: '/images/tilapia-roja.jpg'
 };
 
 // --- Complete product list (with single 'imagen' property) ---
@@ -50,7 +50,7 @@ const productos = [
     id: 2,
     nombre: "Papa a la Francesa Premium 2.5kg",
     categoria: "Congelados",
-    descripcion: "Selección de papas a la francesa estilo gourmet, precocidas y ultracongeladas IQF. Estándar restaurante.",
+    descripcion: "Selección de papas a la francesa estilo gourmet, crudas y ultracongeladas IQF. Estándar restaurante.",
     imagen: imagenesProductos.papasFrancesas,
     congelado: true
   },
@@ -70,9 +70,16 @@ const productos = [
     imagen: imagenesProductos.chuletaCerdo,
     congelado: true
   },
-  
+  // ELIMINADO: {
+  //   id: 5,
+  //   nombre: "Filete de Res Angus",
+  //   categoria: "Carne de Res",
+  //   descripcion: "Filetes de res Angus ultracongelados al vacío. Corte profesional para restaurantes.",
+  //   imagen: imagenesProductos.fileteRes,
+  //   congelado: true
+  // },
   {
-    id: 6,
+    id: 6, // Este ID ahora corresponde al antiguo ID 6
     nombre: "Pierna de Cerdo con Piel IQF",
     categoria: "Carne de Cerdo",
     descripcion: "Perniles completos ultracongelados IQF. Ideal para hornear profesionalmente.",
@@ -80,7 +87,7 @@ const productos = [
     congelado: true
   },
   {
-    id: 7,
+    id: 7, // Este ID ahora corresponde al antiguo ID 7
     nombre: "Pechuga de Pollo IQF",
     categoria: "Pollo",
     descripcion: "Pechugas de pollo deshuesadas ultracongeladas individualmente. Cajas de 10kg.",
@@ -88,7 +95,7 @@ const productos = [
     congelado: true
   },
   {
-    id: 8,
+    id: 8, // Este ID ahora corresponde al antiguo ID 8
     nombre: "Camarones U/15 IQF",
     categoria: "Mariscos",
     descripcion: "Camarones crudos ultracongelados IQF, tamaño U/15 (15 unidades por libra). Origen sostenible.",
@@ -96,7 +103,7 @@ const productos = [
     congelado: true
   },
   {
-    id: 9,
+    id: 9, // Este ID ahora corresponde al antiguo ID 9
     nombre: "Salmón Noruego Premium",
     categoria: "Pescados",
     descripcion: "Filetes de salmón Noruego ultracongelados al vacío. Corte sashimi grado.",
@@ -104,14 +111,13 @@ const productos = [
     congelado: true
   },
   {
-    id: 10,
+    id: 10, // Este ID ahora corresponde al antiguo ID 10
     nombre: "Chuleton de Cerdo Dry Aged",
     categoria: "Carne de Cerdo",
     descripcion: "Chuletones premium madurados y ultracongelados. Grosor 3cm. Empaque al vacío.",
     imagen: imagenesProductos.chuletonCerdo,
     congelado: true
   },
-  // --- ¡NUEVOS PRODUCTOS AGREGADOS AQUÍ ABAJO! ---
   {
     id: 11,
     nombre: "Bocachico Importado Entero",
@@ -175,6 +181,14 @@ const productos = [
     descripcion: "Pechugas de pollo enteras con hueso y piel, congeladas individualmente (IQF). Perfectas para asar o guisar, garantizando jugosidad y un sabor robusto. Una opción de gran valor por su calidad y versatilidad.",
     imagen: imagenesProductos.pechugaEntera,
     congelado: true
+  },
+  {
+    id: 19,
+    nombre: "Tilapia Roja Fresca",
+    categoria: "Pescados",
+    descripcion: "Tilapia roja de acuicultura controlada, ultracongelada para mantener la frescura y el sabor. Ideal para menús variados y con un excelente precio para el volumen.",
+    imagen: imagenesProductos.tilapiaRoja,
+    congelado: true
   }
 ];
 
@@ -182,7 +196,7 @@ export default function JJDistribuciones() {
   const [terminoBusqueda, setTerminoBusqueda] = useState('');
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Todos');
   const [productoExpandido, setProductoExpandido] = useState<number | null>(null);
-  const numeroWhatsapp = "3017685501"; // Reemplaza con tu número de WhatsApp
+  const numeroWhatsapp = "573015753258"; // ¡NÚMERO DE WHATSAPP CORREGIDO!
 
   const categorias = ['Todos', ...new Set(productos.map(p => p.categoria))];
 
@@ -217,7 +231,6 @@ export default function JJDistribuciones() {
         <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 mb-6">
           Calidad Premium en Productos Congelados para tu Negocio.
         </p>
-        {/* --- Nuevo Eslogan Agregado Aquí --- */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -226,7 +239,6 @@ export default function JJDistribuciones() {
         >
           **¿Buscas la mejor relación calidad-precio en el mercado? ¡Contáctanos para competir con los mejores precios!**
         </motion.p>
-        {/* --- Fin Nuevo Eslogan --- */}
 
         <div className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
           <div className="relative flex-grow">
