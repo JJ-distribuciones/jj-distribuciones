@@ -19,7 +19,6 @@ const imagenesProductos = {
   papasFrancesas: '/images/papas-francesas.jpg',
   piernaPollo: '/images/pierna-pollo.jpg',
   chuletaCerdo: '/images/chuleta-cerdo.jpg',
-  // fileteRes: '/images/filete-res.jpg', // YA NO NECESITAMOS LA IMAGEN PARA ESTE PRODUCTO
   piernaCerdo: '/images/pierna-cerdo.jpg',
   pechugaPollo: '/images/pechuga-pollo.jpg',
   camarones: '/images/camarones.jpg',
@@ -33,10 +32,12 @@ const imagenesProductos = {
   fileteBasa: '/images/filete-basa.jpg',
   truchaMariposa: '/images/trucha-mariposa.jpg',
   pechugaEntera: '/images/pechuga-entera.jpg',
-  tilapiaRoja: '/images/tilapia-roja.jpg'
+  tilapiaRoja: '/images/tilapia-roja.jpg',
+  // --- ¡NUEVA IMAGEN AGREGADA! ---
+  papaGoldenPhoenix: '/images/papa-golden-phoenix.jpg'
 };
 
-// --- Complete product list (with single 'imagen' property) ---
+// --- Complete product list ---
 const productos = [
   {
     id: 1,
@@ -70,16 +71,8 @@ const productos = [
     imagen: imagenesProductos.chuletaCerdo,
     congelado: true
   },
-  // ELIMINADO: {
-  //   id: 5,
-  //   nombre: "Filete de Res Angus",
-  //   categoria: "Carne de Res",
-  //   descripcion: "Filetes de res Angus ultracongelados al vacío. Corte profesional para restaurantes.",
-  //   imagen: imagenesProductos.fileteRes,
-  //   congelado: true
-  // },
   {
-    id: 6, // Este ID ahora corresponde al antiguo ID 6
+    id: 6,
     nombre: "Pierna de Cerdo con Piel IQF",
     categoria: "Carne de Cerdo",
     descripcion: "Perniles completos ultracongelados IQF. Ideal para hornear profesionalmente.",
@@ -87,7 +80,7 @@ const productos = [
     congelado: true
   },
   {
-    id: 7, // Este ID ahora corresponde al antiguo ID 7
+    id: 7,
     nombre: "Pechuga de Pollo IQF",
     categoria: "Pollo",
     descripcion: "Pechugas de pollo deshuesadas ultracongeladas individualmente. Cajas de 10kg.",
@@ -95,7 +88,7 @@ const productos = [
     congelado: true
   },
   {
-    id: 8, // Este ID ahora corresponde al antiguo ID 8
+    id: 8,
     nombre: "Camarones U/15 IQF",
     categoria: "Mariscos",
     descripcion: "Camarones crudos ultracongelados IQF, tamaño U/15 (15 unidades por libra). Origen sostenible.",
@@ -103,7 +96,7 @@ const productos = [
     congelado: true
   },
   {
-    id: 9, // Este ID ahora corresponde al antiguo ID 9
+    id: 9,
     nombre: "Salmón Noruego Premium",
     categoria: "Pescados",
     descripcion: "Filetes de salmón Noruego ultracongelados al vacío. Corte sashimi grado.",
@@ -111,7 +104,7 @@ const productos = [
     congelado: true
   },
   {
-    id: 10, // Este ID ahora corresponde al antiguo ID 10
+    id: 10,
     nombre: "Chuleton de Cerdo Dry Aged",
     categoria: "Carne de Cerdo",
     descripcion: "Chuletones premium madurados y ultracongelados. Grosor 3cm. Empaque al vacío.",
@@ -189,6 +182,14 @@ const productos = [
     descripcion: "Tilapia roja de acuicultura controlada, ultracongelada para mantener la frescura y el sabor. Ideal para menús variados y con un excelente precio para el volumen.",
     imagen: imagenesProductos.tilapiaRoja,
     congelado: true
+  },
+  {
+    id: 20, // ¡NUEVO PRODUCTO AGREGADO!
+    nombre: "Papa a la Francesa GOLDEN-PHOENIX",
+    categoria: "Congelados",
+    descripcion: "Papas a la francesa de corte clásico, ultracongeladas y listas para freír. Ofrecen un excelente rendimiento y sabor, perfectas para restaurantes y servicios de comida rápida que buscan calidad y economía.",
+    imagen: imagenesProductos.papaGoldenPhoenix,
+    congelado: true
   }
 ];
 
@@ -196,7 +197,7 @@ export default function JJDistribuciones() {
   const [terminoBusqueda, setTerminoBusqueda] = useState('');
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Todos');
   const [productoExpandido, setProductoExpandido] = useState<number | null>(null);
-  const numeroWhatsapp = "573017685501"; // ¡NÚMERO DE WHATSAPP CORREGIDO!
+  const numeroWhatsapp = "573017685501"; // Número de WhatsApp corregido
 
   const categorias = ['Todos', ...new Set(productos.map(p => p.categoria))];
 
