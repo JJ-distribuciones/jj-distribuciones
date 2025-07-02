@@ -59,7 +59,20 @@ const imagenesProductos = {
   pernilCampesinoContramuslo: '/images/pernil-campesino-contramuslo.jpg',
   alaMixtaCampesino: '/images/ala-mixta-campesino.jpg',
   alaCampesino: '/images/ala-campesino.jpg',
-  // codosCampesino: '/images/codos-campesino.jpg', // ELIMINADO
+
+  // --- IMÁGENES SALSAMENTARIA ---
+  chorizoAhumado300: '/images/chorizo-ahumado-300.jpg',
+  chorizoPolloPicante300: '/images/chorizo-pollo-picante-300.jpg',
+  chorizoParrillero250: '/images/chorizo-parrillero-250.jpg',
+  chorizoParrillero500: '/images/chorizo-parrillero-500.jpg',
+  jamonPolloAhumo250: '/images/jamon-pollo-ahumo-250.jpg',
+  jamonFamiliar500: '/images/jamon-familiar-500.jpg',
+  jamon250: '/images/jamon-250.jpg',
+  molipolloCongelado500: '/images/molipollo-congelado-500.jpg',
+  salchichaAhumada500: '/images/salchicha-ahumada-500.jpg',
+  salchichaAhumada1000: '/images/salchicha-ahumada-1000.jpg',
+  salchichonSeleccionado500: '/images/salchichon-seleccionado-500.jpg',
+  salchichaPremium500: '/images/salchicha-premium-500.jpg',
 };
 
 // --- Complete product list ---
@@ -68,7 +81,7 @@ const productos = [
     id: 1,
     nombre: "Lomo de Cerdo IQF",
     categoria: "Carne de Cerdo",
-    descripcion: "Corte premium ultracongelado mediante Individual Quick Freezing (IQF) para preservar textura y calidad. Presentación en cajas de 10kg.",
+    descripcion: "Un corte premium de lomo de cerdo, ultracongelado con tecnología Individual Quick Freezing (IQF) para preservar su frescura, jugosidad y textura. Presentación en cajas de 10kg, ideal para la alta cocina y el control de porciones.",
     imagen: imagenesProductos.lomoCerdo,
     congelado: true
   },
@@ -76,7 +89,7 @@ const productos = [
     id: 2,
     nombre: "Papa a la Francesa Premium 2.5kg",
     categoria: "Congelados",
-    descripcion: "Selección de papas a la francesa estilo gourmet, crudas y ultracongeladas IQF. Estándar restaurante.",
+    descripcion: "Crujientes papas a la francesa estilo gourmet, crudas y ultracongeladas IQF para una cocción perfecta en tu establecimiento. El estándar de oro para restaurantes que buscan calidad y eficiencia sin compromisos.",
     imagen: imagenesProductos.papasFrancesas,
     congelado: true
   },
@@ -84,7 +97,7 @@ const productos = [
     id: 3,
     nombre: "Pierna de Pollo IQF",
     categoria: "Pollo",
-    descripcion: "Piernas de pollo frescas ultracongeladas individualmente (IQF) en cajas de 15kg. Sin hormonas.",
+    descripcion: "Tiernas y jugosas piernas de pollo, ultracongeladas individualmente (IQF) en cajas de 15kg para una fácil manipulación y control de inventario. Criadas sin hormonas, garantizando un sabor auténtico y saludable.",
     imagen: imagenesProductos.piernaPollo,
     congelado: true
   },
@@ -92,7 +105,7 @@ const productos = [
     id: 4,
     nombre: "Chuleta de Cerdo IQF",
     categoria: "Carne de Cerdo",
-    descripcion: "Cortes premium ultracongelados individualmente, empaque al vacío. Cajas de 12 unidades.",
+    descripcion: "Exquisitas chuletas de cerdo de corte premium, ultracongeladas individualmente y empacadas al vacío para sellar su frescura. Disponibles en cajas de 12 unidades, perfectas para ofrecer una porción generosa y de calidad superior.",
     imagen: imagenesProductos.chuletaCerdo,
     congelado: true
   },
@@ -100,7 +113,7 @@ const productos = [
     id: 6,
     nombre: "Pierna de Cerdo con Piel IQF",
     categoria: "Carne de Cerdo",
-    descripcion: "Perniles completos ultracongelados IQF. Ideal para hornear profesionalmente.",
+    descripcion: "Perniles completos ultracongelados IQF. Su piel contribuye a una cocción más jugosa y un dorado perfecto, ideal para hornear o asar profesionalmente, logrando un resultado espectacular.",
     imagen: imagenesProductos.piernaCerdo,
     congelado: true
   },
@@ -108,7 +121,7 @@ const productos = [
     id: 7,
     nombre: "Pechuga de Pollo IQF",
     categoria: "Pollo",
-    descripcion: "Pechugas de pollo deshuesadas ultracongeladas individualmente. Cajas de 10kg.",
+    descripcion: "Pechugas de pollo deshuesadas y ultracongeladas individualmente (IQF) para tu comodidad. Presentación en cajas de 10kg, ofreciendo versatilidad y facilidad en la preparación de innumerables platos saludables y deliciosos.",
     imagen: imagenesProductos.pechugaPollo,
     congelado: true
   },
@@ -116,7 +129,7 @@ const productos = [
     id: 8,
     nombre: "Camarones U/15 IQF",
     categoria: "Mariscos",
-    descripcion: "Camarones crudos ultracongelados IQF, tamaño U/15 (15 unidades por libra). Origen sostenible.",
+    descripcion: "Camarones crudos de tamaño U/15 (aproximadamente 15 unidades por libra), ultracongelados IQF para mantener su frescura y textura. De origen sostenible, son perfectos para añadir un toque gourmet a tus platillos de mar.",
     imagen: imagenesProductos.camarones,
     congelado: true
   },
@@ -124,7 +137,7 @@ const productos = [
     id: 9,
     nombre: "Salmón Noruego Premium",
     categoria: "Pescados",
-    descripcion: "Filetes de salmón Noruego ultracongelados al vacío. Corte sashimi grado.",
+    descripcion: "Lujosos filetes de salmón Noruego, ultracongelados y empacados al vacío para asegurar su pureza y calidad 'sashimi grade'. Una elección sofisticada para menús que buscan ofrecer lo mejor del mar.",
     imagen: imagenesProductos.salmon,
     congelado: true
   },
@@ -132,7 +145,7 @@ const productos = [
     id: 10,
     nombre: "Chuleton de Cerdo Dry Aged",
     categoria: "Carne de Cerdo",
-    descripcion: "Chuletones premium madurados y ultracongelados. Grosor 3cm. Empaque al vacío.",
+    descripcion: "Impresionantes chuletones de cerdo madurados en seco (Dry Aged) y ultracongelados. Con un grosor de 3cm y empacados al vacío, ofrecen una experiencia culinaria superior con un sabor intensificado y una ternura excepcional.",
     imagen: imagenesProductos.chuletonCerdo,
     congelado: true
   },
@@ -140,7 +153,7 @@ const productos = [
     id: 11,
     nombre: "Bocachico Importado Entero",
     categoria: "Pescados",
-    descripcion: "Bocachico importado de selección premium, ultracongelado entero para mantener su frescura y sabor auténtico. Ideal para una preparación tradicional con la máxima calidad y un precio competitivo para tu negocio.",
+    descripcion: "Bocachico importado de selección premium, ultracongelado entero para preservar su frescura y su auténtico sabor tradicional. Ideal para preparaciones caseras o especialidades culinarias con la máxima calidad y un precio competitivo para tu negocio.",
     imagen: imagenesProductos.bocachicoImportado,
     congelado: true
   },
@@ -148,7 +161,7 @@ const productos = [
     id: 12,
     nombre: "Bagre de Río en Postas IQF",
     categoria: "Pescados",
-    descripcion: "Exquisito bagre de río en postas, congelado individualmente (IQF) para garantizar una textura y sabor inigualables. Ofrece la conveniencia de porciones perfectas y una calidad superior a un precio accesible para restaurantes.",
+    descripcion: "Exquisito bagre de río en postas, congelado individualmente (IQF) para garantizar una textura y sabor inigualables. Ofrece la conveniencia de porciones perfectas y una calidad superior a un precio accesible para tu restaurante.",
     imagen: imagenesProductos.bagreRioPostas,
     congelado: true
   },
@@ -156,7 +169,7 @@ const productos = [
     id: 13,
     nombre: "Cachama Entera Premium",
     categoria: "Pescados",
-    descripcion: "Cachama entera de primera calidad, cuidadosamente seleccionada y ultracongelada para preservar todas sus propiedades. Un producto versátil y económico que no compromete la excelencia en tu cocina.",
+    descripcion: "Cachama entera de primera calidad, cuidadosamente seleccionada y ultracongelada para preservar todas sus propiedades nutricionales y su sabor. Un producto versátil y económico que no compromete la excelencia en tu cocina profesional.",
     imagen: imagenesProductos.cachamaEntera,
     congelado: true
   },
@@ -164,7 +177,7 @@ const productos = [
     id: 14,
     nombre: "Basa en Postas IQF",
     categoria: "Pescados",
-    descripcion: "Postas de basa de alto rendimiento, congeladas con tecnología IQF para asegurar su frescura y facilitar su porcionado. Es una opción de pescado blanco de excelente calidad y precio, perfecta para una variedad de platos.",
+    descripcion: "Postas de basa de alto rendimiento, congeladas con tecnología IQF para asegurar su frescura y facilitar su porcionado. Una opción de pescado blanco de excelente calidad y precio, perfecta para una gran variedad de platos nutritivos.",
     imagen: imagenesProductos.basaPostas,
     congelado: true
   },
@@ -172,7 +185,7 @@ const productos = [
     id: 15,
     nombre: "Basa Entera Congelada",
     categoria: "Pescados",
-    descripcion: "Pescado basa entero, ultracongelado para conservar su integridad y frescura. Una alternativa económica y de gran volumen que mantiene nuestros estándares de calidad para satisfacer las necesidades de tu establecimiento.",
+    descripcion: "Pescado basa entero, ultracongelado para conservar su integridad y frescura desde el origen hasta tu mesa. Una alternativa económica y de gran volumen que mantiene nuestros estándares de calidad para satisfacer las necesidades de tu establecimiento.",
     imagen: imagenesProductos.basaEntera,
     congelado: true
   },
@@ -180,7 +193,7 @@ const productos = [
     id: 16,
     nombre: "Filete de Basa Premium",
     categoria: "Pescados",
-    descripcion: "Suave y magro filete de basa, sin piel ni espinas, ultracongelado individualmente. Ofrece una conveniencia excepcional y una relación calidad-precio inmejorable, ideal para preparaciones rápidas y saludables.",
+    descripcion: "Suave y magro filete de basa, cuidadosamente preparado sin piel ni espinas, y ultracongelado individualmente. Ofrece una conveniencia excepcional y una relación calidad-precio inmejorable, ideal para preparaciones rápidas y saludables.",
     imagen: imagenesProductos.fileteBasa,
     congelado: true
   },
@@ -188,7 +201,7 @@ const productos = [
     id: 17,
     nombre: "Trucha Mariposa Fresca Congelada",
     categoria: "Pescados",
-    descripcion: "Trucha fresca en corte mariposa, ultracongelada para preservar su delicado sabor y textura. Un producto gourmet de alta calidad que se adapta a diversos métodos de cocción y ofrece un valor excepcional.",
+    descripcion: "Trucha fresca en un elegante corte mariposa, ultracongelada para preservar su delicado sabor y textura. Un producto gourmet de alta calidad que se adapta a diversos métodos de cocción y ofrece un valor excepcional para menús selectos.",
     imagen: imagenesProductos.truchaMariposa,
     congelado: true
   },
@@ -196,7 +209,7 @@ const productos = [
     id: 18,
     nombre: "Pechuga de Pollo Entera IQF",
     categoria: "Pollo",
-    descripcion: "Pechugas de pollo enteras con hueso y piel, congeladas individualmente (IQF). Perfectas para asar o guisar, garantizando jugosidad y un sabor robusto. Una opción de gran valor por su calidad y versatilidad.",
+    descripcion: "Pechugas de pollo enteras con hueso y piel, congeladas individualmente (IQF). Perfectas para asar, guisar o ahumar, garantizando una jugosidad inigualable y un sabor robusto. Una opción de gran valor por su calidad y versatilidad en la cocina.",
     imagen: imagenesProductos.pechugaEntera,
     congelado: true
   },
@@ -204,7 +217,7 @@ const productos = [
     id: 19,
     nombre: "Tilapia Roja Fresca",
     categoria: "Pescados",
-    descripcion: "Tilapia roja de acuicultura controlada, ultracongelada para mantener la frescura y el sabor. Ideal para menús variados y con un excelente precio para el volumen.",
+    descripcion: "Tilapia roja de acuicultura controlada, ultracongelada para mantener la frescura y el sabor natural. Ideal para una variedad de menús por su carne blanca y suave, con un excelente precio para compras al por mayor.",
     imagen: imagenesProductos.tilapiaRoja,
     congelado: true
   },
@@ -212,7 +225,7 @@ const productos = [
     id: 20,
     nombre: "Papa a la Francesa GOLDEN-PHOENIX",
     categoria: "Congelados",
-    descripcion: "Papas a la francesa de corte clásico, ultracongeladas y listas para freír. Ofrecen un excelente rendimiento y sabor, perfectas para restaurantes y servicios de comida rápida que buscan calidad y economía.",
+    descripcion: "Papas a la francesa de corte clásico, ultracongeladas y listas para freír, garantizando una textura crujiente y un interior suave. Ofrecen un excelente rendimiento y sabor, perfectas para restaurantes y servicios de comida rápida que buscan calidad y economía.",
     imagen: imagenesProductos.papaGoldenPhoenix,
     congelado: true
   },
@@ -310,7 +323,7 @@ const productos = [
     id: 32,
     nombre: "Codos de Pollo Blanco Frescos",
     categoria: "Pollo Blanco",
-    descripcion: "Codos de pollo refrigerados, ideales para caldos, sopas y fondos que requieren sabor intenso. Un producto de valor, que te permite optimizar el uso de cada parte del pollo, garantizando economía y calidad.",
+    descripcion: "Codos de pollo refrigerados, ideales para caldos, sopas y fondos que requieren sabor intenso. Un producto de valor, que te permite optimizar el uso de cada parte del pollo, garantizando economía y calidad en tu cocina.",
     imagen: imagenesProductos.codosBlanco,
     congelado: false
   },
@@ -388,7 +401,104 @@ const productos = [
     imagen: imagenesProductos.alaCampesino,
     congelado: false
   },
-  // ID 45 (Codos de Pollo Campesino Frescos) ELIMINADO
+
+  // --- PRODUCTOS: SALSAMENTARIA ---
+  {
+    id: 45,
+    nombre: "Chorizo Ahumado x 5 und x 300 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Deliciosos chorizos ahumados, con un sabor profundo y ahumado, ideales para asar o freír. Presentación práctica de 5 unidades por paquete de 300 gramos. Perfecto para parrilladas, tapas o como un complemento sabroso en tus platos.",
+    imagen: imagenesProductos.chorizoAhumado300,
+    congelado: false
+  },
+  {
+    id: 46,
+    nombre: "Chorizo de Pollo Ahumado Picante x 5 und x 300 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Un innovador chorizo de pollo ahumado con un vibrante toque picante, presentado en paquetes de 5 unidades por 300 gramos. Una alternativa ligera y llena de sabor para quienes buscan una opción saludable sin renunciar a la intensidad.",
+    imagen: imagenesProductos.chorizoPolloPicante300,
+    congelado: false
+  },
+  {
+    id: 47,
+    nombre: "Chorizo Parrillero x 8 und x 250 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Chorizo parrillero de excelente calidad, con la jugosidad y el sabor perfectos para la parrilla. Empaque conveniente de 8 unidades (250 gramos). Ideal para tus eventos, asados o para ofrecer un bocado tradicional y delicioso.",
+    imagen: imagenesProductos.chorizoParrillero250,
+    congelado: false
+  },
+  {
+    id: 48,
+    nombre: "Chorizo Parrillero x 8 und x 500 grs",
+    categoria: "Salsamentaria",
+    descripcion: "El clásico chorizo parrillero de gran sabor, ahora en un práctico paquete de 8 unidades (500 gramos). Ofrece un rendimiento superior y una calidad consistente, garantizando el éxito de tus parrilladas y una experiencia culinaria memorable.",
+    imagen: imagenesProductos.chorizoParrillero500,
+    congelado: false
+  },
+  {
+    id: 49,
+    nombre: "Jamón de Pollo al Humo x 250 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Delicado jamón de pollo con un exquisito sabor ahumado, en una presentación de 250 gramos. Ideal para elevar tus sándwiches, ensaladas o como un ingrediente versátil que añade un toque distintivo a cualquier receta.",
+    imagen: imagenesProductos.jamonPolloAhumo250,
+    congelado: false
+  },
+  {
+    id: 50,
+    nombre: "Jamón Familiar x 500 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Jamón de cerdo tradicional en un formato familiar de 500 gramos. Su versatilidad y excelente relación calidad-precio lo hacen perfecto para el consumo diario en tu hogar o negocio, ideal para sándwiches y desayunos.",
+    imagen: imagenesProductos.jamonFamiliar500,
+    congelado: false
+  },
+  {
+    id: 51,
+    nombre: "Jamón x 250 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Jamón de cerdo de alta calidad, presentado en un práctico empaque de 250 gramos. Un producto esencial que ofrece versatilidad culinaria y una opción deliciosa para porciones individuales, tablas de quesos o tus recetas favoritas.",
+    imagen: imagenesProductos.jamon250,
+    congelado: false
+  },
+  {
+    id: 52,
+    nombre: "Molipollo Congelado x 500 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Versátil molipollo ultracongelado en presentación de 500 gramos. Su textura fina y facilidad de uso lo hacen ideal para la preparación de hamburguesas caseras, albóndigas, rellenos y otras delicias culinarias, optimizando tu tiempo en la cocina.",
+    imagen: imagenesProductos.molipolloCongelado500,
+    congelado: true // ¡ESTE SÍ ES CONGELADO!
+  },
+  {
+    id: 54,
+    nombre: "Salchicha Ahumada Clásica x 12 und x 500 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Salchichas ahumadas de sabor tradicional y ahumado, presentadas en un paquete de 12 unidades (500 gramos). Perfectas para hot dogs, desayunos campestres o como acompañamiento versátil en tus platos.",
+    imagen: imagenesProductos.salchichaAhumada500,
+    congelado: false
+  },
+  {
+    id: 55,
+    nombre: "Salchicha Ahumada Clásica x 24 und x 1000 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Salchichas ahumadas de sabor clásico en una presentación familiar y económica de 24 unidades (1000 gramos). Ideal para negocios con alta demanda, garantiza rendimiento y satisfacción en cada preparación.",
+    imagen: imagenesProductos.salchichaAhumada1000,
+    congelado: false
+  },
+  {
+    id: 56,
+    nombre: "Salchichón Seleccionado x 500 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Salchichón de primera selección, en una práctica presentación de 500 gramos. Un embutido versátil y delicioso, perfecto para picadas, sándwiches o como un ingrediente clave en tus recetas tradicionales.",
+    imagen: imagenesProductos.salchichonSeleccionado500,
+    congelado: false
+  },
+  {
+    id: 57,
+    nombre: "Salchicha Premium x 7 und x 500 grs",
+    categoria: "Salsamentaria",
+    descripcion: "Salchichas de calidad premium, presentadas en un paquete de 7 unidades (500 gramos). Destacan por su sabor superior, textura firme y jugosa, ideales para ofrecer una opción diferenciada y de alta gama en tu menú.",
+    imagen: imagenesProductos.salchichaPremium500,
+    congelado: false
+  },
 ];
 
 export default function JJDistribuciones() {
@@ -408,7 +518,7 @@ export default function JJDistribuciones() {
 
   const contactarPorWhatsApp = (productoNombre?: string) => {
     let mensaje = "Hola, estoy interesado en ";
-    mensaje += productoNombre ? `el producto: ${productoNombre}` : "sus productos congelados";
+    mensaje += productoNombre ? `el producto: ${productoNombre}` : "sus productos";
     mensaje += "\n\nPor favor, envíame información sobre disponibilidad y condiciones de compra.";
 
     // Abre el enlace de WhatsApp en una nueva pestaña
@@ -428,7 +538,7 @@ export default function JJDistribuciones() {
           JJ Distribuciones
         </h1>
         <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 mb-6">
-          Calidad Premium en Productos Congelados para tu Negocio.
+          Calidad Premium en Productos Congelados y Frescos para tu Negocio.
         </p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
