@@ -33,8 +33,33 @@ const imagenesProductos = {
   truchaMariposa: '/images/trucha-mariposa.jpg',
   pechugaEntera: '/images/pechuga-entera.jpg',
   tilapiaRoja: '/images/tilapia-roja.jpg',
-  // --- ¡NUEVA IMAGEN AGREGADA! ---
-  papaGoldenPhoenix: '/images/papa-golden-phoenix.jpg'
+  papaGoldenPhoenix: '/images/papa-golden-phoenix.jpg',
+
+  // --- IMÁGENES POLLO BLANCO ---
+  polloBlancoEntero: '/images/pollo-blanco-entero.jpg',
+  pechugaBlancoConPiel: '/images/pechuga-blanco-con-piel.jpg',
+  pechugaBlancoSinPiel: '/images/pechuga-blanco-sin-piel.jpg',
+  piernaPernilBlanco: '/images/pierna-pernil-blanco.jpg',
+  piernaPernilBlancoSinPiel: '/images/pierna-pernil-blanco-sin-piel.jpg',
+  piernaBlancoSinPiel: '/images/pierna-blanco-sin-piel.jpg',
+  piernaBlanco: '/images/pierna-blanco.jpg',
+  pernilMixtoBlanco: '/images/pernil-mixto-blanco.jpg',
+  alaMixtaBlanco: '/images/ala-mixta-blanco.jpg',
+  alaBlanco: '/images/ala-blanco.jpg',
+  colombinaBlanco: '/images/colombina-blanco.jpg',
+  codosBlanco: '/images/codos-blanco.jpg',
+  pernilBlancoSinPielContramuslo: '/images/pernil-blanco-sin-piel-contramuslo.jpg',
+  churrascoPolloBlanco: '/images/churrasco-pollo-blanco.jpg',
+
+  // --- IMÁGENES POLLO CAMPESINO ---
+  polloCampesinoEntero: '/images/pollo-campesino-entero.jpg',
+  pechugaCampesinoConPiel: '/images/pechuga-campesino-con-piel.jpg',
+  piernaPernilCampesinoMixta: '/images/pierna-pernil-campesino-mixta.jpg',
+  piernaCampesino: '/images/pierna-campesino.jpg',
+  pernilCampesinoContramuslo: '/images/pernil-campesino-contramuslo.jpg',
+  alaMixtaCampesino: '/images/ala-mixta-campesino.jpg',
+  alaCampesino: '/images/ala-campesino.jpg',
+  // codosCampesino: '/images/codos-campesino.jpg', // ELIMINADO
 };
 
 // --- Complete product list ---
@@ -184,13 +209,186 @@ const productos = [
     congelado: true
   },
   {
-    id: 20, // ¡NUEVO PRODUCTO AGREGADO!
+    id: 20,
     nombre: "Papa a la Francesa GOLDEN-PHOENIX",
     categoria: "Congelados",
     descripcion: "Papas a la francesa de corte clásico, ultracongeladas y listas para freír. Ofrecen un excelente rendimiento y sabor, perfectas para restaurantes y servicios de comida rápida que buscan calidad y economía.",
     imagen: imagenesProductos.papaGoldenPhoenix,
     congelado: true
-  }
+  },
+
+  // --- NUEVOS PRODUCTOS: POLLO BLANCO (REFRIGERADOS) ---
+  {
+    id: 21,
+    nombre: "Pollo Entero Blanco Fresco",
+    categoria: "Pollo Blanco",
+    descripcion: "Pollo entero de calidad superior, refrigerado para mantener su frescura y jugosidad óptima. Ideal para asados o preparaciones a gran escala, ofrece una excelente relación calidad-precio y es la base perfecta para cualquier cocina profesional.",
+    imagen: imagenesProductos.polloBlancoEntero,
+    congelado: false
+  },
+  {
+    id: 22,
+    nombre: "Pechuga de Pollo Blanco con Piel Fresca",
+    categoria: "Pollo Blanco",
+    descripcion: "Pechugas completas con piel, refrigeradas para máxima frescura y control de porciones. Su piel ayuda a mantener la humedad durante la cocción, garantizando un sabor robusto y un rendimiento óptimo a un precio competitivo para tu negocio.",
+    imagen: imagenesProductos.pechugaBlancoConPiel,
+    congelado: false
+  },
+  {
+    id: 23,
+    nombre: "Pechuga de Pollo Blanco Sin Piel Fresca",
+    categoria: "Pollo Blanco",
+    descripcion: "Filetes de pechuga de pollo blanco, deshuesados y sin piel, refrigerados. Perfectos para dietas saludables o preparaciones ligeras, ofrecen versatilidad y una cocción rápida, con la calidad y precio que tu negocio merece.",
+    imagen: imagenesProductos.pechugaBlancoSinPiel,
+    congelado: false
+  },
+  {
+    id: 24,
+    nombre: "Pierna Pernil de Pollo Blanco Fresca",
+    categoria: "Pollo Blanco",
+    descripcion: "Corte completo de pierna y pernil, refrigerado para asegurar su frescura y facilidad de manejo. Ideal para guisos y asados, este corte es jugoso y sabroso, ofreciendo un gran rendimiento y un costo-efectivo para volúmenes de producción.",
+    imagen: imagenesProductos.piernaPernilBlanco,
+    congelado: false
+  },
+  {
+    id: 25,
+    nombre: "Pierna Pernil de Pollo Blanco Sin Piel Fresca",
+    categoria: "Pollo Blanco",
+    descripcion: "Pierna pernil deshuesada y sin piel, refrigerada. Este corte magro y versátil es excelente para salteados, estofados o desmenuzar, combinando la comodidad con un alto valor nutricional y un precio inmejorable para tu menú.",
+    imagen: imagenesProductos.piernaPernilBlancoSinPiel,
+    congelado: false
+  },
+  {
+    id: 26,
+    nombre: "Pierna de Pollo Blanco Sin Piel Fresca",
+    categoria: "Pollo Blanco",
+    descripcion: "Tiernas piernas de pollo deshuesadas y sin piel, refrigeradas. Perfectas para preparaciones rápidas y porcionadas, ideales para ensaladas, brochetas o platos infantiles, garantizando calidad y rendimiento por encima del promedio.",
+    imagen: imagenesProductos.piernaBlancoSinPiel,
+    congelado: false
+  },
+  {
+    id: 27,
+    nombre: "Pierna de Pollo Blanco Fresca",
+    categoria: "Pollo Blanco",
+    descripcion: "Jugosas piernas de pollo, refrigeradas. Un corte clásico, ideal para freír, hornear o asar, que ofrece un sabor consistente y una excelente textura, representando una opción económica y de alta demanda.",
+    imagen: imagenesProductos.piernaBlanco,
+    congelado: false
+  },
+  {
+    id: 28,
+    nombre: "Pernil Mixto de Pollo Blanco Fresco",
+    categoria: "Pollo Blanco",
+    descripcion: "Combinación de pernil (muslo) con hueso y piel, refrigerado. Un corte versátil y económico, ideal para dar sabor a caldos, guisos o para asar, asegurando la mejor relación calidad-precio para tus preparaciones culinarias.",
+    imagen: imagenesProductos.pernilMixtoBlanco,
+    congelado: false
+  },
+  {
+    id: 29,
+    nombre: "Ala Mixta de Pollo Blanco Fresca",
+    categoria: "Pollo Blanco",
+    descripcion: "Alas de pollo completas (drumette, flat y tip), refrigeradas. Perfectas para snacks, aperitivos o platos principales, estas alas son un éxito garantizado por su jugosidad y sabor, ofreciendo un rendimiento excepcional.",
+    imagen: imagenesProductos.alaMixtaBlanco,
+    congelado: false
+  },
+  {
+    id: 30,
+    nombre: "Ala de Pollo Blanco Fresca",
+    categoria: "Pollo Blanco",
+    descripcion: "Alas de pollo seleccionadas, refrigeradas, ideales para preparar en grandes volúmenes. Su tamaño y consistencia las hacen perfectas para freír, glasear o asar, con un precio que optimiza tus costos.",
+    imagen: imagenesProductos.alaBlanco,
+    congelado: false
+  },
+  {
+    id: 31,
+    nombre: "Colombina de Pollo Blanco Fresca",
+    categoria: "Pollo Blanco",
+    descripcion: "Deliciosas colombinas de pollo, refrigeradas, ideales para porciones individuales. Fáciles de cocinar y de gran atractivo visual, perfectas para menús infantiles o como aperitivos gourmet, con un rendimiento que sorprenderá.",
+    imagen: imagenesProductos.colombinaBlanco,
+    congelado: false
+  },
+  {
+    id: 32,
+    nombre: "Codos de Pollo Blanco Frescos",
+    categoria: "Pollo Blanco",
+    descripcion: "Codos de pollo refrigerados, ideales para caldos, sopas y fondos que requieren sabor intenso. Un producto de valor, que te permite optimizar el uso de cada parte del pollo, garantizando economía y calidad.",
+    imagen: imagenesProductos.codosBlanco,
+    congelado: false
+  },
+  {
+    id: 34,
+    nombre: "Pernil de Pollo Blanco Sin Piel (Contramuslo) Fresco",
+    categoria: "Pollo Blanco",
+    descripcion: "Contramuslos de pollo blanco deshuesados y sin piel, refrigerados. Un corte versátil y magro, ideal para parrilla, sartén o estofados, ofreciendo una carne tierna y jugosa con un costo altamente eficiente para tu negocio.",
+    imagen: imagenesProductos.pernilBlancoSinPielContramuslo,
+    congelado: false
+  },
+  {
+    id: 35,
+    nombre: "Churrasco de Pollo Blanco Fresco",
+    categoria: "Pollo Blanco",
+    descripcion: "Corte especial de pollo blanco tipo churrasco, refrigerado. Ideal para la parrilla o plancha, ofrece una cocción rápida y uniforme, garantizando una presentación atractiva y un sabor delicioso para tus clientes.",
+    imagen: imagenesProductos.churrascoPolloBlanco,
+    congelado: false
+  },
+
+  // --- NUEVOS PRODUCTOS: POLLO CAMPESINO (REFRIGERADOS) ---
+  {
+    id: 36,
+    nombre: "Pollo Entero Campesino Fresco",
+    categoria: "Pollo Campesino",
+    descripcion: "Pollo entero de crianza tradicional, refrigerado, que ofrece un sabor más intenso y una textura más firme. Ideal para preparaciones que buscan un toque casero y auténtico, con la calidad superior que distingue a nuestro pollo campesino.",
+    imagen: imagenesProductos.polloCampesinoEntero,
+    congelado: false
+  },
+  {
+    id: 37,
+    nombre: "Pechuga de Pollo Campesino con Piel Fresca",
+    categoria: "Pollo Campesino",
+    descripcion: "Pechugas de pollo campesino con piel, refrigeradas. Un corte que resalta por su sabor concentrado y su textura robusta, perfecto para asar o guisar, ofreciendo la autenticidad y el rendimiento que tu cocina necesita.",
+    imagen: imagenesProductos.pechugaCampesinoConPiel,
+    congelado: false
+  },
+  {
+    id: 40,
+    nombre: "Pierna Pernil Mixta de Pollo Campesino Fresca",
+    categoria: "Pollo Campesino",
+    descripcion: "Mix de pierna y pernil de pollo campesino con hueso y piel, refrigerado. Perfecto para caldos ricos en sabor o preparaciones al horno, garantizando una experiencia culinaria auténtica y un aprovechamiento óptimo del producto.",
+    imagen: imagenesProductos.piernaPernilCampesinoMixta,
+    congelado: false
+  },
+  {
+    id: 41,
+    nombre: "Pierna de Pollo Campesino Fresca",
+    categoria: "Pollo Campesino",
+    descripcion: "Jugosas piernas de pollo campesino, refrigeradas. Reconocidas por su sabor más pronunciado y su carne consistente, son ideales para freír o asar, ofreciendo un perfil de sabor único que tus clientes apreciarán.",
+    imagen: imagenesProductos.piernaCampesino,
+    congelado: false
+  },
+  {
+    id: 42,
+    nombre: "Pernil de Pollo Campesino (Contramuslo) Fresco",
+    categoria: "Pollo Campesino",
+    descripcion: "Contramuslos de pollo campesino con hueso y piel, refrigerados. Un corte con gran sabor y textura, ideal para parrilla, estofados o desmenuzar, aportando esa autenticidad y jugosidad que solo el pollo campesino ofrece.",
+    imagen: imagenesProductos.pernilCampesinoContramuslo,
+    congelado: false
+  },
+  {
+    id: 43,
+    nombre: "Ala Mixta de Pollo Campesino Fresca",
+    categoria: "Pollo Campesino",
+    descripcion: "Alas de pollo campesino completas (drumette, flat y tip), refrigeradas. Con un sabor más robusto, son ideales para aperitivos gourmet o como plato principal, garantizando una calidad excepcional y un rendimiento superior.",
+    imagen: imagenesProductos.alaMixtaCampesino,
+    congelado: false
+  },
+  {
+    id: 44,
+    nombre: "Ala de Pollo Campesino Fresca",
+    categoria: "Pollo Campesino",
+    descripcion: "Alas de pollo campesino seleccionadas, refrigeradas. Su carne más densa y su sabor distintivo las hacen perfectas para preparaciones que buscan un gusto más auténtico y una experiencia culinaria memorable.",
+    imagen: imagenesProductos.alaCampesino,
+    congelado: false
+  },
+  // ID 45 (Codos de Pollo Campesino Frescos) ELIMINADO
 ];
 
 export default function JJDistribuciones() {
